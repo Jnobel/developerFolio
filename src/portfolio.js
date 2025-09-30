@@ -349,7 +349,7 @@ const podcastSection = {
   podcast: [
       "https://www.youtube.com/embed/vblbPHq_UlI?si=HTcd9DOltrDEl9LC"
   ],
-  display: true
+  display: false
 };
 
 // Resume Section
