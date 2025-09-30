@@ -3,7 +3,7 @@ import "./Contact.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import {illustration, contactInfo} from "../../portfolio";
 import {Fade} from "react-reveal";
-import email from "../../assets/lottie/email";
+import devSetup3D from "../../assets/lottie/devSetup3D.json";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
@@ -14,7 +14,7 @@ export default function Contact() {
       <div className="main contact-margin-top" id="contact">
         <div className="contact-div-main">
           <div className="contact-header">
-            <h1 className="heading contact-title">{contactInfo.title}</h1>
+            <h1 className="heading contact-title">Contact Me 📱 ✉️</h1>
             <p
               className={
                 isDark
@@ -22,7 +22,7 @@ export default function Contact() {
                   : "subTitle contact-subtitle"
               }
             >
-              {contactInfo.subtitle}
+              Have a project, idea, or just want to connect? I'm open to freelance work, collaboration, or a good dev conversation.
             </p>
             <div
               className={
@@ -35,7 +35,7 @@ export default function Contact() {
                     className="contact-detail"
                     href={"tel:" + contactInfo.number}
                   >
-                    {contactInfo.number}
+                    📱 {contactInfo.number}
                   </a>
                   <br />
                   <br />
@@ -45,7 +45,7 @@ export default function Contact() {
                 className="contact-detail-email"
                 href={"mailto:" + contactInfo.email_address}
               >
-                {contactInfo.email_address}
+                ✉️ {contactInfo.email_address}
               </a>
               <br />
               <br />
@@ -54,7 +54,7 @@ export default function Contact() {
           </div>
           <div className="contact-image-div">
             {illustration.animated ? (
-              <DisplayLottie animationData={email} />
+              <DisplayLottie animationData={devSetup3D} />
             ) : (
               <img
                 alt="Man working"

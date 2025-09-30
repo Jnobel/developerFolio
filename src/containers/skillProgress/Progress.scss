@@ -68,3 +68,16 @@
     order: 2;
   }
 }
+.skills-animation {
+  max-width: 240px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-animation canvas {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 240px;
+}

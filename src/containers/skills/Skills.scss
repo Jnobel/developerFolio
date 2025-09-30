@@ -61,4 +61,28 @@
     /* display: none; */
     order: 2;
   }
+  
 }
+   .skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+  }
+
+.skills-animation {
+  flex: 1;
+  max-width: 600px;
+  min-width: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.skills-animation canvas {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 420px;
+  }
